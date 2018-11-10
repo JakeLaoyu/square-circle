@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('include/header.inc')
+
+<body>
+    <div class="loading">
+        <div class="loading__inner">
+            <div class="loading__pen">
+                <img src="../images/loading-pen.png" alt="">
+            </div>
+
+            <div class="loading__schedule-border">
+                <div class="loading__schedule-inner"></div>
+                <img src="../images/loading-border.png" alt="">
+            </div>
+
+            <div class="loading__percentage">1%</div>
+        </div>
+    </div>
+
+    <div class="orientation hide">
+        <div class="orientation__inner">
+            <img class="orientation__phone" src="../images/phone.png" alt="">
+            <div class="orientation__text">为了更好的体验，请将手机/平板横过来</div>
+            <div class="orientation__prompt">若无法旋转，请将手机解锁</div>
+        </div>
+    </div>
+
+
+    <audio id="bgMusic" autoplay="autoplay" loop="loop">
+        <source src="../music/童年.mp3" type="audio/mp3">
+    </audio>
+
+    <img class="bgMusicControl rotate play" src="../images/music.png">
+
+    <div class="start hide">
+        <div class="start__inner">
+            <img src="../images/zqj.png" class="zqj hide">
+            <img src="../images/wxhn.png" class="wxhn hide">
+            <div class="start__text">
+                <div class="typed__start"></div>
+            </div>
+            <div class="start-main-wrap">
+                <i class="float"></i>
+                <img src="../images/start-main.gif" alt="" class="start__main">
+            </div>
+
+            <div class="btn"></div>
+        </div>
+    </div>
+
+    <div class="game hide">
+        <div class="game__text">
+            <img src="../images/game-text.png" alt="">
+        </div>
+
+        <img src="../images/yueliang.png" alt="" class="game__yueliang">
+        <img src="../images/yuebing.png" alt="" class="game__yuebing">
+        <div class="game__prompt hide">需同时移动</div>
+
+        <i class="game__dot game__dot-1 hide"></i>
+        <i class="game__dot game__dot-2 hide"></i>
+
+        <canvas class="canvas hide" id="canvas"></canvas>
+        <!-- <canvas class="canvas" id="canvas-2"></canvas> -->
+    </div>
+
+    <div class="score hide">
+        <img src="../images/score-1.png" alt="" class="score-1">
+
+        <div class="score__90 hide">
+            <img src="../images/score-yuebing.png" alt="" class="score__yuebing">
+            <img src="../images/score-qiu.png" alt="" class="score__qiu">
+            <img src="../images/score-gaoshou.png" alt="" class="score__gaoshou">
+            <img src="../images/score-girl.png" alt="" class="score__girl">
+            <img src="../images/score-boy.png" alt="" class="score__boy">
+        </div>
+
+        <div class="score__80 hide">
+            <img src="../images/score-yuebing-80.png" alt="" class="score__yuebing">
+            <img src="../images/score-qiu-80.png" alt="" class="score__qiu">
+            <img src="../images/score-gaoshou-80.png" alt="" class="score__gaoshou">
+            <img src="../images/score-girl-80.png" alt="" class="score__girl">
+            <img src="../images/score-boy-80.png" alt="" class="score__boy">
+        </div>
+
+        <div class="score__70 hide">
+            <img src="../images/score-yuebing-70.png" alt="" class="score__yuebing">
+            <img src="../images/score-qiu-70.png" alt="" class="score__qiu">
+            <img src="../images/score-gaoshou-70.png" alt="" class="score__gaoshou">
+            <img src="../images/score-girl-70.png" alt="" class="score__girl">
+            <img src="../images/score-boy-70.png" alt="" class="score__boy">
+        </div>
+
+
+        <div class="score__num">
+            <img src="../images/4.png" alt="" class="score__ten num">
+            <img src="../images/9.png" alt="" class="score__bit num">
+            <img src="../images/score-dot.png" alt="" class="score__dot">
+            <img src="../images/0.png" alt="" class="score__decimal num">
+            <img src="../images/score-fen.png" alt="" class="score__fen">
+        </div>
+
+        <img src="../images/score-btn-bg.png" alt="" class="score__btn-bg">
+        <img src="../images/score-again.png" alt="" class="score__again">
+        <img src="../images/score-ranking.png" alt="" class="score__ranking">
+        <img src="../images/score-bottom.png" alt="" class="score__bottom">
+
+    </div>
+
+    <div class="rank hide">
+        <img src="../images/rank-tag.png" alt="" class="rank__tag">
+        <img src="../images/rank-title.png" alt="" class="rank__title">
+        <img src="../images/rank-me-bg.png" alt="" class="rank__me-bg">
+        <img src="../images/rank-av-me.png" alt="" class="rank__me-av">
+
+        <div class="rank__me-text">我&nbsp;&nbsp;的</div>
+        <div class="rank__me">
+            <div class="rank__me-line1">
+                <span class="text">排名</span>
+                <span class="no"></span>
+            </div>
+            <div class="rank__me-line2">
+                <span class="text"></span>
+                <span class="time"></span>
+            </div>
+        </div>
+
+        <div class="rank__list">
+        </div>
+
+
+
+
+        <img src="../images/rank-car-1.png" alt="" class="rank__car-1">
+
+        <img class="rank__bottom" src="../images/rank-bottom.png" alt="">
+
+        <img src="../images/rank-car-2.png" alt="" class="rank__car-2">
+
+        <img src="../images/rank-again.png" alt="" class="rank__again">
+
+        <img src="../images/rank-share.png" alt="" class="rank__share">
+    </div>
+
+
+    <div class="share hide">
+        <img src="../images/share.png" alt="">
+    </div>
+
+
+</body>
+
+<!--common.js 为webpack的CommonsChunkPlugin插件所生成的，需保留，如果要调整，请自行修改webpack配置-->
+<script src="../js/common.js"></script>
+<script src="../js/main.js"></script>
+
+@@include('include/ga.inc')
+</html>
