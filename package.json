@@ -35,7 +35,7 @@
     "minimist": "1.2.6",
     "node-sass": "^3.10.0",
     "typed.js": "^2.0.5",
-    "webpack": "^1.13.1"
+    "webpack": "^5.94.0"
   },
   "dependencies": {
     "dxy-wechat-share": "^1.0.2"
